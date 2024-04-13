@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+}
+
+.control-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(3, 169, 244, 0.9);
+}
+
+.control-buttons span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #f44336;
+  padding: 15px 25px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.win {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  text-align: center;
+  display: none;
+}
+.win h2 {
+  font-size: 10em;
+  text-transform: uppercase;
+  color: yellow;
+  margin-top: 100px;
+}
+
+.win span {
+  font-size: 2em;
+  text-transform: capitalize;
+  color: yellow;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+.win span.blue {
+  color: blue;
+}
+
+.win span.red {
+  color: red;
+}
+
+.win button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.win button:hover {
+  background-color: #5c5c06;
+}
+.info-container {
+  width: 1080px;
+  margin: 20px auto 0;
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-size: 24px;
+  overflow: hidden;
+  border: 2px solid #2196f3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-container .name {
+  width: 50%;
+}
+.info-container .tries {
+  width: 50%;
+  text-align: right;
+}
+
+.memory-game-blocks {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.memory-game-blocks.no-click {
+  pointer-events: none;
+}
+
+.memory-game-blocks .game-block {
+  height: 120px;
+  width: 120px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 200px;
+  margin: 0 10px 20px;
+}
+.memory-game-blocks .game-block .front {
+  background-color: #333;
+  line-height: 120px;
+}
+.memory-game-blocks .game-block .front::before {
+  content: "?";
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+}
+.memory-game-blocks .game-block .back {
+  background-color: #607d8b;
+  transform: rotateY(180deg);
+}
+
+.memory-game-blocks .game-block .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memory-game-blocks .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid #2196f3;
+}
+
+/*js class's*/
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-matched {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+}

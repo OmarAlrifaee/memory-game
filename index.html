@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icons file-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--main style file-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>start game</span>
+    </div>
+    <div class="win">
+      <h2></h2>
+      <span class="wronge-tries"></span>
+      <span class="blue"></span>
+      <span class="red"></span>
+      <button>restart</button>
+    </div>
+
+    <div class="info-container">
+      <div class="name"><span></span> turn</div>
+      <div class="tries">Wronge tries: <span>0</span></div>
+    </div>
+
+    <div class="memory-game-blocks">
+      <div class="game-block" data-tec="cat">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/cat.png" alt="cat" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="cat">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/cat.png" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="dog">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dog.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="dog">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dog.png" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="bear">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/bear.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="bear">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/bear.png" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="leon">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/leon.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="leon">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/leon.png" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="tigger">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/tigger.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="tigger">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/tigger.png" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="dear">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dear.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="dear">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dear.jpeg" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="din">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/din.jpg" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tec="din">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/din.jpg" alt="" />
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="dlf">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dlf.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-tec="dlf">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/dlf.jpg" alt="">
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="kamel">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/kamel.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-tec="kamel">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/kamel.jpg" alt="">
+        </div>
+      </div>
+      <!---->
+      <div class="game-block" data-tec="monkey">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/monkey.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-tec="monkey">
+        <div class="front face"></div>
+        <div class="back face">
+          <img src="./photos/monkey.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <audio
+      id="success"
+      src="sounds/Success sound effect (copyright free).mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="fail"
+      src="sounds/Soft Fail Sound Effect.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="win-sound"
+      src="sounds/Win sound effect no copyright.mp3"
+      preload="auto"
+    ></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
